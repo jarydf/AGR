@@ -1,0 +1,30 @@
+{
+	"Regular Gauge" : [
+		"Airspeed",
+		"Fuel Quantity",
+		"Fuel PSI",
+		"Interstage Turbine Temperature",
+		"Gas Producer"
+	],
+
+	"Split Gauge (Temperature/Pressure)":[
+		"Hydraulic System",
+		"Transmission",
+		"Gear Box",
+		"Amps",
+		"Volts",
+		"Engine Oil"
+	],
+
+	"+/- Gauge": ["Vertical Speed"],
+
+	"Artificial Horizon": ["Artificial Horizon"],
+
+	"Compass": ["Compass"],
+
+	"Multi-pointer Gauge": [
+		"Altimeter",
+		"RPM",
+		"Torque"
+	]
+}
