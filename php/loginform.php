@@ -1,8 +1,6 @@
 <?php
 session_start();
 ?>
-
-
 <?php if(isset($_SESSION['user']) && $_SESSION['user'] != ""): ?>
 <?php header("Location: ./index.php"); exit;?>
 <?php else: ?>
@@ -40,10 +38,6 @@ session_start();
          </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-
-
-
-
       </div>
 
    </body>

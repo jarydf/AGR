@@ -1,14 +1,12 @@
 <?php
-$servername = "167.99.180.7";
-$username = "gaugeReaders";
-$password = "Vision_Killers";
+$servername = "localhost";
+$database = "mfac";
+$username = "root";
+$password = "";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-
+$con = mysqli_connect($servername, $username, $password, $database);
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+if ($con->connect_error) {
+    die("Connection failed: " . $con->connect_error);
 }
-echo "Connected successfully";
 ?>

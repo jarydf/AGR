@@ -1,7 +1,7 @@
 <?php
+include "../connect.php";
 session_start();
 if($_SERVER["REQUEST_METHOD"]=="POST"){
-  include "connect.php";
   $userN = $con->real_escape_string($_POST['email']);
   $pass = $con->real_escape_string($_POST['pass']);
   if(isset($userN) && isset($pass)){
@@ -41,6 +41,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
   mysqli_close($con);
 }
 else{
-  header("Location: ../loginForm.php");
+  header("Location: ../loginform.php");
 }
 ?>
