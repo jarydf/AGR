@@ -1,10 +1,6 @@
 <?php
 session_start();
-
-include 'auth.php';
-if (!$isAuth) {
-  exit();
-}
+include '../connect.php';
 
 // catch the image file and write it to the server's file system
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -14,9 +10,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   else {
 
     // retrieve the user's id from the database based on their email
-    include 'connect.php';
 
-    $sql = "SELECT pId FROM User WHERE email = ?";
+    $sql = "SELECT pId FROM user WHERE email = ?";
     $userId = NULL;
     $retrievalSuccess = false;
 

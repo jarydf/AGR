@@ -9,7 +9,6 @@ session_start();
    <head>
       <title>Login</title>
       <meta charset="utf-8">
-
             <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
             <link href="styles/login.css" rel="stylesheet">
    </head>
@@ -17,7 +16,6 @@ session_start();
    <body>
 
       <div class = "container">
-
         <form action = "action/loginAction.php" method = "post">
           <div class="form-group">
             <label for="email">Email address:</label>
@@ -27,9 +25,9 @@ session_start();
           </div>
 
           <div class="form-group">
-            <label for="pwd">Password:</label>
+            <label for="psswrd">Password:</label>
             <input type = "password" class = "form-control"
-               name = "pass" required>
+               name = "psswrd" required>
           </div>
           <div class="form-group form-check">
             <label class="form-check-label">
@@ -39,7 +37,6 @@ session_start();
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div>
-
    </body>
  </header>
 </html>

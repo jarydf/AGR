@@ -1,15 +1,10 @@
 <?php
 session_start();
 
-include 'auth.php';
-if (!$isAuth) {
-  exit();
-}
-
 // catch the posted dummy data and write it to the local files as JSON
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-
   // repackage the gauge data, but this time PHP style
+  
   $data = array();
   for ($counter = 0; $counter < count($_POST['data']); $counter++) {
     $data['box' . $counter] = array(

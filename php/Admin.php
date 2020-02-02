@@ -1,9 +1,7 @@
-<?php
-	session_start();
-	include './action/auth.php';
-?>
-
-<?php if(isset($_SESSION['isAdmin']) && $_SESSION['isAdmin'] && $isAuth): ?>
+<?php 
+session_start();
+include './action/auth.php';
+if(isset($_SESSION['isAdmin'])  && $isAuth): ?>
 	<!DOCTYPE html>
 	<html>
 		<head>

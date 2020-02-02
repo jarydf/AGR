@@ -1,4 +1,3 @@
-#! C:\Users\Jaryd\AppData\Local\Programs\Python\Python37-32\python.exe
 import json
 import os
 import os.path

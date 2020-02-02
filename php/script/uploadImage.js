@@ -121,8 +121,6 @@ $(document).ready(function() {
         processData: false,
         type: 'POST',
         success: function(data) {
-
-
           // now that the image is uploaded, send up the user-defined gauge data
           $.post('action/uploadGaugeData.php', {
               data: boxes,

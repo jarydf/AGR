@@ -4,7 +4,7 @@ if (!isset($_SESSION)) {
 }
 
 $isAuth = false;
-if (isset($_SESSION['user']) && $_SESSION['user'] != '') {
+if (isset($_SESSION['email']) && $_SESSION['email'] != '') {
   $isAuth = true;
 }
 ?>

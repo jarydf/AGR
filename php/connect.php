@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$database = "mfac";
+$database = "agr";
 $username = "root";
 $password = "";
 
